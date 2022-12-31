@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!--FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!--META-->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Fortune Cookie</title>
+
+  <!--LINKS-->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Dancing+Script&family=Montserrat:wght@700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main>
-    <div>
-      <h1>what's your luck today</h1>
+    <div class="screen1">
+      <h1>What's your luck today!</h1>
       <p>Make my fortune!</p>
-      <img src="./assets/fortune-cookie.png" alt="biscoito da sorte">
+      <img src="./assets/fortune-cookie.png" alt="fortune cookie">
+    </div>
+    <div class="screen2  hide">
+      <h2>Here's your luck for today:</h2>
+      <p>If someone is so tired that they can't give you a smile, leave them yours.</p>
+      <img src="./assets/opened-cookie.png" alt="opened cookie">
+      <button>Open another cookie</button>
     </div>
   </main>
   <script src="./main.js"></script>
