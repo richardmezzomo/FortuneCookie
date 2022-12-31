@@ -1,7 +1,7 @@
 const screen1 = document.querySelector('.screen1')
 const screen2 = document.querySelector('.screen2')
 const btnStart = document.querySelector('img')
-const btnReset = document.querySelector('.btnReset')
+const btnReset = document.querySelector('button')
 const phrases = document.querySelector('h3')
 const fortunePhrases = [
   "With integrity and consistency -- your credits are piling up.",
@@ -261,6 +261,7 @@ const fortunePhrases = [
 ]
 
 btnStart.addEventListener('click', openCookie)
+btnReset.addEventListener('click', resetCookie)
 
 function openCookie () {
   screen1.classList.add('hide')
@@ -270,4 +271,9 @@ function openCookie () {
   const randomNumber = Math.floor(Math.random() * totalPhrases)
 
   phrases.innerHTML = fortunePhrases[randomNumber]
+}
+
+function resetCookie () {
+  screen1.classList.remove('hide')
+  screen2.classList.add('hide')
 }
